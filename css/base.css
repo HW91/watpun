@@ -1,0 +1,109 @@
+/* Wat Punyawanaram sample site - shared styles.
+   Colors live here so they are easy to change in one place. */
+:root {
+  --cream: #fbf7f0;
+  --white: #ffffff;
+  --maroon: #7a1f2b;
+  --maroon-dark: #561520;
+  --gold: #c9962b;
+  --gold-soft: #f3e3b8;
+  --ink: #2b2124;
+  --muted: #6b5f62;
+  --line: #eadfcf;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(60, 25, 30, 0.12);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Noto Sans", "Noto Sans Thai", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.65;
+  font-size: 17px;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--maroon); }
+h1, h2, h3 {
+  font-family: "Playfair Display", "Noto Serif Thai", serif;
+  color: var(--maroon);
+  line-height: 1.25;
+  margin: 0 0 0.5em;
+}
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); }
+h3 { font-size: 1.25rem; }
+.container { width: min(1120px, 100% - 32px); margin-inline: auto; }
+.eyebrow {
+  text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem;
+  color: var(--gold); font-weight: 600; margin: 0 0 0.4em;
+}
+.rule { width: 56px; height: 3px; background: var(--gold); border: 0; margin: 0 0 1.2em; }
+
+/* Buttons */
+.btn {
+  display: inline-block; padding: 0.75em 1.6em; border-radius: 999px;
+  background: var(--maroon); color: #fff; text-decoration: none; font-weight: 600;
+  border: 2px solid var(--maroon); cursor: pointer; font-size: 0.95rem; font-family: inherit;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.btn:hover { background: var(--maroon-dark); transform: translateY(-1px); }
+.btn-gold { background: var(--gold); border-color: var(--gold); color: #2b1a00; }
+.btn-gold:hover { background: #b38322; }
+.btn-ghost { background: transparent; color: #fff; border-color: #fff; }
+.btn-ghost:hover { background: #fff; color: var(--maroon); }
+.btn-outline { background: transparent; color: var(--maroon); }
+.btn-outline:hover { background: var(--maroon); color: #fff; }
+
+/* Top bar */
+.topbar { background: var(--maroon-dark); color: #f5e9d0; font-size: 0.82rem; }
+.topbar .container { display: flex; gap: 18px; align-items: center; justify-content: space-between; padding: 6px 0; flex-wrap: wrap; }
+.topbar a { color: #f5e9d0; text-decoration: none; }
+.topbar .tb-left, .topbar .tb-right { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.lang-select {
+  background: var(--maroon); color: #fff; border: 1px solid var(--gold);
+  border-radius: 6px; padding: 3px 8px; font-size: 0.82rem; font-family: inherit; cursor: pointer;
+}
+
+/* Header and menu */
+.site-header { background: var(--white); position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line); }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--maroon); }
+.brand img { width: 46px; height: 46px; }
+.brand span { font-family: "Playfair Display", "Noto Serif Thai", serif; font-weight: 700; font-size: 1.15rem; line-height: 1.1; }
+.brand small { display: block; font-family: "Noto Sans", "Noto Sans Thai", sans-serif; font-weight: 400; font-size: 0.7rem; color: var(--muted); }
+.nav { display: flex; align-items: center; gap: 4px; }
+.nav a { text-decoration: none; color: var(--ink); font-size: 0.86rem; font-weight: 600; padding: 8px 9px; border-radius: 8px; white-space: nowrap; }
+.nav a:hover, .nav a.active { color: var(--maroon); background: var(--gold-soft); }
+.nav a.btn { color: #fff; margin-left: 6px; padding: 8px 18px; background: var(--maroon); }
+.nav a.btn:hover { background: var(--maroon-dark); }
+.menu-btn { display: none; background: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font-size: 1.3rem; color: var(--maroon); cursor: pointer; }
+
+@media (max-width: 1180px) {
+  .menu-btn { display: block; }
+  .nav {
+    display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--white);
+    flex-direction: column; align-items: stretch; padding: 12px 16px 20px; border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+  .nav.open { display: flex; }
+  .nav a { font-size: 1.05rem; padding: 12px; }
+  .nav a.btn { text-align: center; margin: 8px 0 0; }
+  .topbar .tb-hours { display: none; }
+}
+
+/* Footer */
+.site-footer { background: var(--maroon-dark); color: #f1e6ce; margin-top: 0; padding: 48px 0 20px; font-size: 0.92rem; }
+.site-footer h3 { color: var(--gold-soft); font-size: 1.05rem; }
+.site-footer a { color: #f1e6ce; }
+.foot-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 28px; }
+.foot-grid ul { list-style: none; padding: 0; margin: 0; }
+.foot-grid li { margin-bottom: 6px; }
+.foot-note { border-top: 1px solid rgba(255, 255, 255, 0.18); margin-top: 28px; padding-top: 16px; text-align: center; font-size: 0.8rem; opacity: 0.85; }
+
+/* Demo popup */
+.modal { position: fixed; inset: 0; background: rgba(30, 10, 14, 0.6); display: none; align-items: center; justify-content: center; z-index: 100; padding: 16px; }
+.modal.open { display: flex; }
+.modal-box { background: #fff; border-radius: var(--radius); padding: 32px 28px; max-width: 420px; text-align: center; box-shadow: var(--shadow); border-top: 6px solid var(--gold); }
+.modal-box h3 { font-size: 1.5rem; }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Orchid plant">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4F3DC"/><stop offset="1" stop-color="#C7E3B8"/></linearGradient></defs>
+<rect width="800" height="800" fill="url(#g)"/>
+<rect x="340" y="500" width="120" height="110" fill="#B3563A"/><path d="M400,500 Q380,300 430,200" stroke="#4E8A45" stroke-width="10" fill="none"/><circle cx="430" cy="200" r="34" fill="#E88CB3"/><circle cx="430" cy="200" r="10" fill="#F5C842"/><circle cx="405" cy="290" r="34" fill="#E88CB3"/><circle cx="405" cy="290" r="10" fill="#F5C842"/><circle cx="450" cy="330" r="34" fill="#E88CB3"/><circle cx="450" cy="330" r="10" fill="#F5C842"/><circle cx="390" cy="400" r="34" fill="#E88CB3"/><circle cx="390" cy="400" r="10" fill="#F5C842"/>
+<rect x="0" y="756" width="800" height="44" fill="#000" opacity=".35"/>
+<text x="400.0" y="784" font-family="Arial,sans-serif" font-size="20" fill="#fff" text-anchor="middle" letter-spacing="2">PLACEHOLDER IMAGE - ORCHID PLANT</text>
+</svg>

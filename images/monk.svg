@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Monk portrait photo">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5C842"/><stop offset="1" stop-color="#FFF6E3"/></linearGradient></defs>
+<rect width="1200" height="800" fill="url(#g)"/>
+<circle cx="600" cy="300" r="230" fill="#FFF1C8" opacity=".85"/><ellipse cx="528.0" cy="672.0" rx="31.2" ry="84.0" transform="rotate(-50 528.0 720)" fill="#F6D9DF" stroke="#C9962B" stroke-width="2.4"/><ellipse cx="561.6" cy="672.0" rx="31.2" ry="84.0" transform="rotate(-25 561.6 720)" fill="#F6D9DF" stroke="#C9962B" stroke-width="2.4"/><ellipse cx="600.0" cy="672.0" rx="31.2" ry="84.0" transform="rotate(0 600.0 720)" fill="#F6D9DF" stroke="#C9962B" stroke-width="2.4"/><ellipse cx="638.4" cy="672.0" rx="31.2" ry="84.0" transform="rotate(25 638.4 720)" fill="#F6D9DF" stroke="#C9962B" stroke-width="2.4"/><ellipse cx="672.0" cy="672.0" rx="31.2" ry="84.0" transform="rotate(50 672.0 720)" fill="#F6D9DF" stroke="#C9962B" stroke-width="2.4"/><circle cx="600" cy="336.0" r="70.4" fill="#C99366"/><path d="M472.0,832.0 Q456.0,448.0 600,416.0 Q744.0,448.0 728.0,832.0 Z" fill="#E8872B"/>
+<rect x="0" y="756" width="1200" height="44" fill="#000" opacity=".35"/>
+<text x="600.0" y="784" font-family="Arial,sans-serif" font-size="20" fill="#fff" text-anchor="middle" letter-spacing="2">PLACEHOLDER IMAGE - MONK PORTRAIT PHOTO</text>
+</svg>
