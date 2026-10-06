@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Buddha statue">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF3D6"/><stop offset="1" stop-color="#F3DFAE"/></linearGradient></defs>
+<rect width="800" height="800" fill="url(#g)"/>
+<circle cx="400" cy="280" r="70" fill="#C9962B"/><path d="M270,560 Q400,260 530,560 Z" fill="#E7B43C"/><rect x="250" y="560" width="300" height="50" fill="#9C2A3A"/>
+<rect x="0" y="756" width="800" height="44" fill="#000" opacity=".35"/>
+<text x="400.0" y="784" font-family="Arial,sans-serif" font-size="20" fill="#fff" text-anchor="middle" letter-spacing="2">PLACEHOLDER IMAGE - BUDDHA STATUE</text>
+</svg>
