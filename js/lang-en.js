@@ -140,6 +140,7 @@ window.I18N.en = {
   "h.ev.eyebrow": "EVENTS",
   "h.ev.title": "Recent Events",
   "h.ev.all": "See All Events",
+  "sched.title": "Schedule",
   "hv1.t": "A Sermon in English: The Power of Right Effort",
   "hv1.time": "Sunday, September 20 · 12:30 PM",
   "hv1.p": "Phrakru Charn gives a sermon in English. Sponsored by Peace Talkers Toastmasters Club and English Wednesday Club.\nWat Punyawanaram, 4490 Aurora Road, Melbourne, FL 32934\nWelcome to join us everyone.",

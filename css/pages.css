@@ -98,6 +98,12 @@
 .dots button { width: 11px; height: 11px; padding: 0; border-radius: 50%; border: 1px solid #fff; background: transparent; cursor: pointer; }
 .dots button.active { background: #fff; }
 
-/* Home page event cards: keep line breaks in schedules */
-.event-card .body p { white-space: pre-line; font-size: 0.94rem; }
-.event-card .body p strong { font-size: 1rem; }
+/* Home page event cards: date line, intro text and schedule list */
+.event-card .body p strong { display: block; color: var(--maroon); font-size: 1rem; }
+.sched { white-space: pre-line; font-size: 0.94rem; }
+.sched p { margin: 0 0 0.7em; }
+.sched-note { font-style: italic; color: var(--muted); margin-top: 0.9em !important; }
+.sched-label { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.74rem; font-weight: 600; color: var(--gold); margin: 1.1em 0 0.2em !important; }
+.sched-row { display: grid; grid-template-columns: 6.2rem 1fr; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); white-space: normal; }
+.sched-time { font-weight: 700; color: var(--maroon); white-space: nowrap; font-variant-numeric: tabular-nums; }
+:lang(th) .sched-label { letter-spacing: 0; font-size: 0.85rem; }

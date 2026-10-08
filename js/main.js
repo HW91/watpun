@@ -9,12 +9,40 @@
     try { localStorage.setItem(KEY, value); } catch (e) { /* private mode: just skip saving */ }
   }
 
+  /* Turns a block of lines into: intro text, a "Schedule" list (time | what happens), closing note.
+     A line that starts with a time such as "10:00 AM" or "10:00 น." becomes a schedule row. */
+  var TIME_LINE = /^(\d{1,2}:\d{2}(?: ?[AP]M| น\.))\s+(.*)$/;
+  function add(parent, tag, cls, text) {
+    var node = document.createElement(tag);
+    if (cls) { node.className = cls; }
+    node.textContent = text;
+    parent.appendChild(node);
+    return node;
+  }
+  function renderSchedule(el, text, words) {
+    el.textContent = "";
+    var seenRows = false;
+    text.split("\n").forEach(function (line) {
+      var m = TIME_LINE.exec(line);
+      if (m) {
+        if (!seenRows) { add(el, "p", "sched-label", words["sched.title"] || "Schedule"); seenRows = true; }
+        var row = add(el, "div", "sched-row", "");
+        add(row, "span", "sched-time", m[1]);
+        add(row, "span", "sched-what", m[2]);
+      } else {
+        add(el, "p", seenRows ? "sched-note" : "sched-intro", line);
+      }
+    });
+  }
+
   function applyLanguage(lang) {
     var words = window.I18N[lang] || window.I18N.en;
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var text = words[el.getAttribute("data-i18n")];
-      if (text !== undefined) { el.textContent = text; }
+      if (text === undefined) { return; }
+      if (el.getAttribute("data-fmt") === "schedule") { renderSchedule(el, text, words); }
+      else { el.textContent = text; }
     });
     document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
       var text = words[el.getAttribute("data-i18n-ph")];
