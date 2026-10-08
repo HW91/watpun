@@ -84,8 +84,9 @@
 /* Photo carousel (Sunday market) */
 .carousel { position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 3 / 2; background: var(--ink); }
 .slides, .slide { position: absolute; inset: 0; width: 100%; height: 100%; }
-.carousel .slide { object-fit: cover; opacity: 0; transition: opacity 0.6s ease; border-radius: 0; box-shadow: none; }
-.carousel .slide.active { opacity: 1; }
+.carousel .slide { display: none; object-fit: cover; border-radius: 0; box-shadow: none; }
+.carousel .slide.active { display: block; animation: slidein 0.5s ease; }
+@keyframes slidein { from { opacity: 0; } to { opacity: 1; } }
 .car-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, 0.85); color: var(--maroon); font-size: 1.1rem; cursor: pointer; }
 .car-btn:hover { background: #fff; }
 .car-btn.prev { left: 10px; }
