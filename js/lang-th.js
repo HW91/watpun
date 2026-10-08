@@ -140,6 +140,7 @@ window.I18N.th = {
   "h.ev.eyebrow": "กิจกรรม",
   "h.ev.title": "กิจกรรมล่าสุด",
   "h.ev.all": "ดูกิจกรรมทั้งหมด",
+  "sched.title": "กำหนดการ",
   "hv1.t": "เทศน์ภาษาอังกฤษ: พลังแห่งความเพียรชอบ",
   "hv1.time": "วันอาทิตย์ที่ 20 กันยายน · 12:30 น.",
   "hv1.p": "พระครูชาญแสดงธรรมเป็นภาษาอังกฤษ สนับสนุนโดย Peace Talkers Toastmasters Club และ English Wednesday Club\nวัดปุญญวนาราม 4490 Aurora Road, Melbourne, FL 32934\nขอเชิญทุกท่านร่วมงาน",
