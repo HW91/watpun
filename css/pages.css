@@ -15,7 +15,7 @@
 
 /* Home hero */
 .hero {
-  background: linear-gradient(90deg, rgba(86, 21, 32, 0.85), rgba(86, 21, 32, 0.25)), url("../images/hero-temple.jpg") center 28% / cover;
+  background: linear-gradient(90deg, rgba(86, 21, 32, 0.85), rgba(86, 21, 32, 0.25)), url("../images/temple.jpg") center 45% / cover;
   color: #fff; padding: 120px 0 110px;
 }
 .hero h1 { color: #fff; max-width: 640px; }
