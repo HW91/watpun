@@ -20,3 +20,6 @@ Plain HTML, CSS and JavaScript. No build step. English and Thai.
 Hours, event dates, the featured project, monk bio, shop items and all pictures are samples.
 The Thai wording is a draft and should be reviewed by a Thai speaker.
 Buy, donate and message buttons only show a "For Demo Only" popup.
+
+## After changing styles or scripts
+Each page links its CSS and JS files with `?v=2` on the end. When you change a `.css` or `.js` file, raise that number in the `.html` files (for example to `?v=3`) so visitors' browsers load the new version instead of an old saved copy.
