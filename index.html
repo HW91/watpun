@@ -32,7 +32,18 @@
 </div></section>
 
 <section class="section market" id="market"><div class="container split">
-  <img src="images/market.svg" alt="Sunday food market">
+  <div class="carousel" id="market-carousel">
+    <div class="slides">
+      <img class="slide active" src="images/sunday.jpg" alt="Sunday food market" onerror="this.onerror=null;this.src='images/market.svg'">
+      <img class="slide" src="images/sunday2.jpg" alt="Sunday food market, more pictures" onerror="this.onerror=null;this.src='images/market.svg'">
+    </div>
+    <button class="car-btn prev" type="button" data-i18n-aria="car.prev" aria-label="Previous picture">&#10094;</button>
+    <button class="car-btn next" type="button" data-i18n-aria="car.next" aria-label="Next picture">&#10095;</button>
+    <div class="car-bar">
+      <button class="car-play" type="button"><span class="car-icon" aria-hidden="true">&#9654;</span> <span class="car-label" data-i18n="car.play">Play slideshow</span></button>
+      <span class="dots"></span>
+    </div>
+  </div>
   <div>
     <span class="badge" data-i18n="m.badge">EVERY SUNDAY</span>
     <h2 style="margin-top:12px" data-i18n="m.title">Sunday Thai Food Market</h2>
@@ -51,7 +62,7 @@
     <p data-i18n="h.about.p">Our temple has been part of the Melbourne community since 1991. We welcome neighbors of every background to meditate, learn and celebrate together.</p>
     <a class="btn btn-outline" href="about.html" data-i18n="h.about.btn">Learn More</a>
   </div>
-  <img src="images/building.svg" alt="Temple building">
+  <img src="images/temple2.png" alt="Temple building">
 </div></section>
 
 <section class="band"><div class="container">
@@ -86,5 +97,6 @@
 <script src="js/lang-th.js"></script>
 <script src="js/layout.js"></script>
 <script src="js/main.js"></script>
+<script src="js/carousel.js"></script>
 </body>
 </html>

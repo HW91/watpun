@@ -20,6 +20,10 @@
       var text = words[el.getAttribute("data-i18n-ph")];
       if (text !== undefined) { el.placeholder = text; }
     });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var text = words[el.getAttribute("data-i18n-aria")];
+      if (text !== undefined) { el.setAttribute("aria-label", text); }
+    });
     document.getElementById("lang").value = lang;
   }
 
