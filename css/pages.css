@@ -97,3 +97,7 @@
 .dots { display: flex; gap: 8px; }
 .dots button { width: 11px; height: 11px; padding: 0; border-radius: 50%; border: 1px solid #fff; background: transparent; cursor: pointer; }
 .dots button.active { background: #fff; }
+
+/* Home page event cards: keep line breaks in schedules */
+.event-card .body p { white-space: pre-line; font-size: 0.94rem; }
+.event-card .body p strong { font-size: 1rem; }
