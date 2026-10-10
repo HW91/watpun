@@ -107,3 +107,32 @@
 .sched-row { display: grid; grid-template-columns: 6.2rem 1fr; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); white-space: normal; }
 .sched-time { font-weight: 700; color: var(--maroon); white-space: nowrap; font-variant-numeric: tabular-nums; }
 :lang(th) .sched-label { letter-spacing: 0; font-size: 0.85rem; }
+
+/* Market POS (demo) */
+.pos-wrap { display: grid; grid-template-columns: 1fr 360px; gap: 28px; align-items: flex-start; }
+.pos-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.pos-item { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; text-align: center; cursor: pointer; font-family: inherit; transition: transform 0.15s, box-shadow 0.15s; }
+.pos-item:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(60, 25, 30, 0.16); }
+.pos-item .emoji { font-size: 2.3rem; display: block; margin-bottom: 8px; }
+.pos-item .name { display: block; font-weight: 700; margin-bottom: 4px; }
+.pos-item .price { display: block; color: var(--maroon); font-weight: 700; }
+
+.pos-cart { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; position: sticky; top: 90px; }
+.pos-cart h3 { margin-top: 0; }
+.pos-cart-list { list-style: none; padding: 0; margin: 0 0 6px; }
+.pos-cart-list li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
+.pos-cart-list li button { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); background: var(--cream); cursor: pointer; font-weight: 700; font-size: 0.95rem; line-height: 1; }
+.pos-empty { color: var(--muted); font-style: italic; padding: 10px 0; margin: 0 0 6px; }
+.pos-total { display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: 700; color: var(--maroon); border-top: 2px solid var(--gold); padding-top: 12px; margin-top: 6px; }
+.pos-cart form label { display: block; font-weight: 600; margin: 14px 0 4px; font-size: 0.9rem; }
+.pos-cart form input { width: 100%; padding: 10px; border: 1px solid #d9cdb8; border-radius: 10px; font: inherit; }
+.pos-msg { color: #b3261e; font-size: 0.85rem; margin: 8px 0 0; display: none; }
+.pos-msg.show { display: block; }
+
+.pos-result { background: var(--gold-soft); border: 1px solid var(--gold); border-radius: var(--radius); padding: 22px; margin-top: 28px; }
+.pos-result h3 { margin-top: 0; }
+.pos-order-no { display: inline-block; background: var(--maroon); color: #fff; font-weight: 700; padding: 4px 14px; border-radius: 999px; font-size: 1.05rem; letter-spacing: 0.03em; }
+.pos-email-preview { background: #fff; border: 1px dashed var(--muted); border-radius: 10px; padding: 14px 16px; margin: 14px 0; font-size: 0.92rem; white-space: pre-wrap; }
+.pos-code { font-size: 2.2rem; font-weight: 800; letter-spacing: 0.15em; color: var(--maroon); background: #fff; border: 3px dashed var(--gold); border-radius: 14px; padding: 14px 20px; display: inline-block; margin: 10px 0; }
+
+@media (max-width: 800px) { .pos-wrap { grid-template-columns: 1fr; } .pos-cart { position: static; } }
