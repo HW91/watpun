@@ -150,7 +150,7 @@ window.I18N.en = {
   "pos.empty": "No items yet. Tap a dish to add it.",
   "pos.total": "Total",
   "pos.name": "Customer Name",
-  "pos.name.ph": "e.g. Somchai",
+  "pos.name.ph": "e.g. John",
   "pos.email": "Customer Email",
   "pos.email.ph": "name@example.com",
   "pos.confirm": "Confirm Order",

@@ -150,7 +150,7 @@ window.I18N.th = {
   "pos.empty": "ยังไม่มีรายการ แตะที่เมนูอาหารเพื่อเพิ่ม",
   "pos.total": "ยอดรวม",
   "pos.name": "ชื่อลูกค้า",
-  "pos.name.ph": "เช่น สมชาย",
+  "pos.name.ph": "เช่น John",
   "pos.email": "อีเมลลูกค้า",
   "pos.email.ph": "name@example.com",
   "pos.confirm": "ยืนยันออเดอร์",
