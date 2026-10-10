@@ -3,69 +3,69 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Market POS (Demo) | Wat Punyawanaram</title>
+<title data-i18n="title.pos">Market POS (Demo) | Wat Punyawanaram</title>
 <meta name="description" content="Demo order screen for Sunday Market volunteers at Wat Punyawanaram. Sample page, built to show the temple how it could work.">
 <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600&family=Noto+Sans:wght@400;600&family=Noto+Serif+Thai:wght@600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/base.css?v=4">
-<link rel="stylesheet" href="css/pages.css?v=4">
+<link rel="stylesheet" href="css/base.css?v=6">
+<link rel="stylesheet" href="css/pages.css?v=6">
 </head>
 <body>
 <div id="site-header"></div>
 <main>
-<section class="page-banner" style="--bg: url('images/market.svg')"><div class="container"><h1>Market POS</h1><p>Sunday Market order entry &mdash; a demo for volunteers</p></div></section>
+<section class="page-banner" style="--bg: url('images/market.svg')"><div class="container"><h1 data-i18n="pos.title">Market POS</h1><p data-i18n="pos.sub">Sunday Market order entry, a demo for volunteers</p></div></section>
 <section class="section"><div class="container">
 
-<div class="notice"><strong>About this demo:</strong> Tapping a dish really adds it to the order below and updates the total &mdash; that part works live. Tapping "Confirm Order" and the payment step show you exactly what the volunteer and the customer would see on the real system. No email is actually sent and no payment is processed. This page is for the temple to review before we build the real version.</div>
+<div class="notice"><strong data-i18n="pos.note.b">About this demo:</strong> <span data-i18n="pos.note">Tapping a dish really adds it to the order below and updates the total. That part works live. Tapping "Confirm Order" and the payment step show you exactly what the volunteer and the customer would see on the real system. No email is actually sent and no payment is processed. This page is for the temple to review before we build the real version.</span></div>
 
 <div class="pos-wrap">
   <div class="pos-items">
-    <button type="button" class="pos-item" data-id="mango" data-name="Mango Sticky Rice" data-price="6"><span class="emoji">&#129909;</span><span class="name">Mango Sticky Rice</span><span class="price">$6.00</span></button>
-    <button type="button" class="pos-item" data-id="padthai" data-name="Pad Thai" data-price="10"><span class="emoji">&#127836;</span><span class="name">Pad Thai</span><span class="price">$10.00</span></button>
-    <button type="button" class="pos-item" data-id="thaitea" data-name="Thai Iced Tea" data-price="4"><span class="emoji">&#129675;</span><span class="name">Thai Iced Tea</span><span class="price">$4.00</span></button>
-    <button type="button" class="pos-item" data-id="springrolls" data-name="Spring Rolls (4 pc)" data-price="6"><span class="emoji">&#129373;</span><span class="name">Spring Rolls (4 pc)</span><span class="price">$6.00</span></button>
-    <button type="button" class="pos-item" data-id="papayasalad" data-name="Papaya Salad (Som Tam)" data-price="8"><span class="emoji">&#129367;</span><span class="name">Papaya Salad (Som Tam)</span><span class="price">$8.00</span></button>
-    <button type="button" class="pos-item" data-id="basilrice" data-name="Thai Basil Fried Rice" data-price="9"><span class="emoji">&#127858;</span><span class="name">Thai Basil Fried Rice</span><span class="price">$9.00</span></button>
+    <button type="button" class="pos-item" data-id="mango" data-price="6"><span class="emoji">&#129909;</span><span class="name" data-i18n="pos.d.mango">Mango Sticky Rice</span><span class="price">$6.00</span></button>
+    <button type="button" class="pos-item" data-id="padthai" data-price="10"><span class="emoji">&#127836;</span><span class="name" data-i18n="pos.d.padthai">Pad Thai</span><span class="price">$10.00</span></button>
+    <button type="button" class="pos-item" data-id="thaitea" data-price="4"><span class="emoji">&#129675;</span><span class="name" data-i18n="pos.d.thaitea">Thai Iced Tea</span><span class="price">$4.00</span></button>
+    <button type="button" class="pos-item" data-id="springrolls" data-price="6"><span class="emoji">&#129373;</span><span class="name" data-i18n="pos.d.springrolls">Spring Rolls (4 pc)</span><span class="price">$6.00</span></button>
+    <button type="button" class="pos-item" data-id="papayasalad" data-price="8"><span class="emoji">&#129367;</span><span class="name" data-i18n="pos.d.papayasalad">Papaya Salad (Som Tam)</span><span class="price">$8.00</span></button>
+    <button type="button" class="pos-item" data-id="basilrice" data-price="9"><span class="emoji">&#127858;</span><span class="name" data-i18n="pos.d.basilrice">Thai Basil Fried Rice</span><span class="price">$9.00</span></button>
   </div>
 
   <div class="pos-cart">
-    <h3>Current Order</h3>
+    <h3 data-i18n="pos.cart">Current Order</h3>
     <ul class="pos-cart-list" id="cart-list"></ul>
-    <p class="pos-empty" id="cart-empty">No items yet. Tap a dish to add it.</p>
-    <div class="pos-total"><span>Total</span><span id="cart-total">$0.00</span></div>
+    <p class="pos-empty" id="cart-empty" data-i18n="pos.empty">No items yet. Tap a dish to add it.</p>
+    <div class="pos-total"><span data-i18n="pos.total">Total</span><span id="cart-total">$0.00</span></div>
     <form id="order-form">
-      <label for="cust-name">Customer Name</label>
-      <input id="cust-name" type="text" autocomplete="off" placeholder="e.g. Somchai">
-      <label for="cust-email">Customer Email</label>
-      <input id="cust-email" type="email" autocomplete="off" placeholder="name@example.com">
+      <label for="cust-name" data-i18n="pos.name">Customer Name</label>
+      <input id="cust-name" type="text" autocomplete="off" placeholder="e.g. Somchai" data-i18n-ph="pos.name.ph">
+      <label for="cust-email" data-i18n="pos.email">Customer Email</label>
+      <input id="cust-email" type="email" autocomplete="off" placeholder="name@example.com" data-i18n-ph="pos.email.ph">
       <p class="pos-msg" id="order-msg"></p>
-      <button type="submit" class="btn" style="width:100%;margin-top:14px;">Confirm Order</button>
+      <button type="submit" class="btn" style="width:100%;margin-top:14px;" data-i18n="pos.confirm">Confirm Order</button>
     </form>
   </div>
 </div>
 
 <div class="pos-result" id="pos-result" hidden>
-  <h3>Order Created <span class="pos-order-no" id="result-order-no"></span></h3>
-  <p>Here is what would happen next on the real system:</p>
+  <h3><span data-i18n="pos.created">Order Created</span> <span class="pos-order-no" id="result-order-no"></span></h3>
+  <p data-i18n="pos.next">Here is what would happen next on the real system:</p>
   <div class="pos-email-preview" id="email-preview-1"></div>
-  <button type="button" class="btn btn-gold" id="mark-paid-btn">Simulate: Payment Received on Zeffy &rarr; Send Pickup Code</button>
+  <button type="button" class="btn btn-gold" id="mark-paid-btn" data-i18n="pos.paid.btn">Simulate: Payment Received on Zeffy → Send Pickup Code</button>
   <div id="pickup-section" hidden>
     <div class="pos-email-preview" id="email-preview-2"></div>
-    <p>Pickup code (the volunteer would also see this on screen as a backup):</p>
+    <p data-i18n="pos.code.intro">Pickup code (the volunteer would also see this on screen as a backup):</p>
     <div class="pos-code" id="pickup-code"></div>
   </div>
-  <p style="margin-top:16px;"><button type="button" class="btn btn-outline" id="new-order-btn">Start New Order</button></p>
+  <p style="margin-top:16px;"><button type="button" class="btn btn-outline" id="new-order-btn" data-i18n="pos.new">Start New Order</button></p>
 </div>
 
 </div></section>
 </main>
 <div id="site-footer"></div>
-<script src="js/lang-en.js?v=4"></script>
-<script src="js/lang-th.js?v=4"></script>
-<script src="js/layout.js?v=4"></script>
-<script src="js/main.js?v=4"></script>
-<script src="js/market-pos.js?v=1"></script>
+<script src="js/lang-en.js?v=6"></script>
+<script src="js/lang-th.js?v=6"></script>
+<script src="js/layout.js?v=6"></script>
+<script src="js/main.js?v=6"></script>
+<script src="js/market-pos.js?v=6"></script>
 </body>
 </html>

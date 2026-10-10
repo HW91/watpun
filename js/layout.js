@@ -8,6 +8,7 @@
     ["gallery.html", "nav.gallery"],
     ["teaching.html", "nav.teaching"],
     ["shop.html", "nav.shop"],
+    ["market-pos.html", "nav.pos"],
     ["project.html", "nav.project"],
     ["contact.html", "nav.contact"]
   ];
