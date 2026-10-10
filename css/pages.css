@@ -113,7 +113,7 @@
 .pos-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
 .pos-item { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; text-align: center; cursor: pointer; font-family: inherit; transition: transform 0.15s, box-shadow 0.15s; }
 .pos-item:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(60, 25, 30, 0.16); }
-.pos-item .emoji { font-size: 2.3rem; display: block; margin-bottom: 8px; }
+.pos-item .dish-img { width: 96px; height: 96px; display: block; margin: 0 auto 8px; }
 .pos-item .name { display: block; font-weight: 700; margin-bottom: 4px; }
 .pos-item .price { display: block; color: var(--maroon); font-weight: 700; }
 
