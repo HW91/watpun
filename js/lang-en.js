@@ -157,6 +157,7 @@ window.I18N.en = {
   "pos.err.empty": "Add at least one item before confirming.",
   "pos.err.fields": "Enter the customer's name and email.",
   "pos.remove": "Remove one {item}",
+  "pos.add": "Add one {item}",
   "pos.created": "Order Created",
   "pos.next": "Here is what would happen next on the real system:",
   "pos.paid.btn": "Simulate: Payment Received on Zeffy → Send Pickup Code",
