@@ -68,19 +68,20 @@ h3 { font-size: 1.25rem; }
 
 /* Header and menu */
 .site-header { background: var(--white); position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--line); }
+.topbar .container, .site-header .container { width: min(1240px, 100% - 32px); }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--maroon); }
 .brand img { width: 46px; height: 46px; }
-.brand span { font-family: "Playfair Display", "Noto Serif Thai", serif; font-weight: 700; font-size: 1.15rem; line-height: 1.1; }
+.brand span { white-space: nowrap; font-family: "Playfair Display", "Noto Serif Thai", serif; font-weight: 700; font-size: 1.15rem; line-height: 1.1; }
 .brand small { display: block; font-family: "Noto Sans", "Noto Sans Thai", sans-serif; font-weight: 400; font-size: 0.7rem; color: var(--muted); }
 .nav { display: flex; align-items: center; gap: 4px; }
-.nav a { text-decoration: none; color: var(--ink); font-size: 0.86rem; font-weight: 600; padding: 8px 9px; border-radius: 8px; white-space: nowrap; }
+.nav a { text-decoration: none; color: var(--ink); font-size: 0.84rem; font-weight: 600; padding: 8px 7px; border-radius: 8px; white-space: nowrap; }
 .nav a:hover, .nav a.active { color: var(--maroon); background: var(--gold-soft); }
 .nav a.btn { color: #fff; margin-left: 6px; padding: 8px 18px; background: var(--maroon); }
 .nav a.btn:hover { background: var(--maroon-dark); }
 .menu-btn { display: none; background: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font-size: 1.3rem; color: var(--maroon); cursor: pointer; }
 
-@media (max-width: 1180px) {
+@media (max-width: 1220px) {
   .menu-btn { display: block; }
   .nav {
     display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--white);
