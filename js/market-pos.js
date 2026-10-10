@@ -46,23 +46,35 @@
     emptyEl.style.display = ids.length ? "none" : "block";
     ids.forEach(function (id) {
       var li = document.createElement("li");
-      var label = document.createElement("span");
-      label.textContent = cart[id] + " x " + dish(id);
-      var right = document.createElement("span");
-      right.style.display = "flex";
-      right.style.alignItems = "center";
-      right.style.gap = "8px";
+      var name = document.createElement("span");
+      name.className = "pos-line-name";
+      name.textContent = dish(id);
       var price = document.createElement("span");
+      price.className = "pos-line-price";
       price.textContent = money(PRICES[id] * cart[id]);
+
+      var controls = document.createElement("div");
+      controls.className = "pos-qty";
       var minus = document.createElement("button");
       minus.type = "button";
       minus.textContent = "−";
       minus.setAttribute("aria-label", t("pos.remove", { item: dish(id) }));
       minus.addEventListener("click", function () { removeOne(id); });
-      right.appendChild(price);
-      right.appendChild(minus);
-      li.appendChild(label);
-      li.appendChild(right);
+      var qty = document.createElement("span");
+      qty.className = "pos-qty-num";
+      qty.textContent = cart[id];
+      var plus = document.createElement("button");
+      plus.type = "button";
+      plus.textContent = "+";
+      plus.setAttribute("aria-label", t("pos.add", { item: dish(id) }));
+      plus.addEventListener("click", function () { addItem(id); });
+      controls.appendChild(minus);
+      controls.appendChild(qty);
+      controls.appendChild(plus);
+
+      li.appendChild(name);
+      li.appendChild(price);
+      li.appendChild(controls);
       listEl.appendChild(li);
     });
     totalEl.textContent = money(cartTotal());

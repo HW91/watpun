@@ -120,8 +120,13 @@
 .pos-cart { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; position: sticky; top: 90px; }
 .pos-cart h3 { margin-top: 0; }
 .pos-cart-list { list-style: none; padding: 0; margin: 0 0 6px; }
-.pos-cart-list li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 0.92rem; }
-.pos-cart-list li button { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); background: var(--cream); cursor: pointer; font-weight: 700; font-size: 0.95rem; line-height: 1; }
+.pos-cart-list li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 8px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+.pos-line-name { flex: 1 1 0; min-width: 0; font-weight: 600; }
+.pos-line-price { font-weight: 700; color: var(--maroon); }
+.pos-qty { flex: 0 0 100%; display: flex; align-items: center; gap: 12px; }
+.pos-qty-num { min-width: 1.6em; text-align: center; font-weight: 700; font-size: 1.05rem; }
+.pos-cart-list li button { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--gold); background: var(--cream); color: var(--maroon); cursor: pointer; font-weight: 700; font-size: 1.2rem; line-height: 1; }
+.pos-cart-list li button:hover { background: var(--gold-soft); }
 .pos-empty { color: var(--muted); font-style: italic; padding: 10px 0; margin: 0 0 6px; }
 .pos-total { display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: 700; color: var(--maroon); border-top: 2px solid var(--gold); padding-top: 12px; margin-top: 6px; }
 .pos-cart form label { display: block; font-weight: 600; margin: 14px 0 4px; font-size: 0.9rem; }
